@@ -71,7 +71,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 4rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ body {
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: var(--text-light);
     text-shadow: 0 0 10px var(--neon-glow);
@@ -98,9 +98,9 @@ body {
 }
 
 .umbrella {
-    font-size: 1.8rem;
-    color: var(--accent-blue);
-    text-shadow: 0 0 15px var(--neon-glow);
+    font-size: 1.6rem;
+    color: var(--text-light) !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4) !important;
     animation: glow 2s ease-in-out infinite;
 }
 
@@ -119,16 +119,17 @@ body {
     font-weight: 600;
     font-family: 'Arial', sans-serif;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
     position: relative;
+    padding: 0.4rem 0;
 }
 
 .nav-item::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -3px;
     left: 0;
     width: 0;
     height: 2px;
@@ -864,10 +865,10 @@ body {
 
 @keyframes glow {
     0%, 100% {
-        text-shadow: 0 0 15px var(--neon-glow);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
     }
     50% {
-        text-shadow: 0 0 25px var(--neon-glow), 0 0 35px var(--neon-glow);
+        text-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 35px rgba(255, 255, 255, 0.4);
     }
 }
 
