@@ -3,273 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Umbrella Company</title>
+    <title>IT Umbrella Company | Technology Talent Solutions</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cookie-banner">
-        <div class="cookie-content">
-            <p>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.</p>
-            <div class="cookie-buttons">
-                <button class="accept-cookies">Accept</button>
-                <button class="decline-cookies">Decline</button>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <header>
         <div class="logo">
-            IT <div class="umbrella-logo"><span class="umbrella">☂</span></div> COMPANY
+            <span>IT</span>Umbrella <span>Company</span>
         </div>
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="#who-we-are" class="nav-item">Who We Are</a>
-                <a href="#services" class="nav-item">Services</a>
-                <a href="#resources" class="nav-item">Resources</a>
-                <a href="#clients" class="nav-item">Clients</a>
-                <a href="#contact" class="nav-item">Contact</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#who-we-are">Who We Are</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <svg class="theme-toggle-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <mask id="mask">
-                        <rect x="0" y="0" width="100%" height="100%" fill="white"/>
-                        <circle cx="12" cy="12" r="4" fill="black"/>
-                    </mask>
-                    <circle cx="12" cy="12" r="9" mask="url(#mask)" />
-                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                </svg>
-                <svg class="theme-toggle-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
-                </svg>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Add mobile menu -->
-    <button class="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <div class="mobile-nav">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="#who-we-are" class="nav-item">Who We Are</a>
-        <a href="#services" class="nav-item">Services</a>
-        <a href="#resources" class="nav-item">Resources</a>
-        <a href="#clients" class="nav-item">Clients</a>
-        <a href="#contact" class="nav-item">Contact</a>
-    </div>
-
-    <div class="banner">
-        <video class="banner-video" autoplay muted loop playsinline>
-            <source src="https://www.shutterstock.com/shutterstock/videos/1107364229/preview/stock-footage--k-digital-cyberspace-particles-digital-data-social-network-connections-quantum-computer.webm" type="video/webm">
-        </video>
-        <div class="banner-content">
-            <h1 class="glitch" data-text="ACCELERATE PROGRESS THROUGH TAILORED TALENT">ACCELERATE PROGRESS THROUGH TAILORED TALENT</h1>
-            <p class="subtitle">We supply highly skilled permanent, contract, fixed-term, and scaled talent solutions across the UK, Europe, and the Middle East.</p>
-            <button class="cta-button">Get Started Today</button>
-        </div>
-    </div>
-
-    <section id="who-we-are" class="who-we-are">
-        <div class="section-container">
-            <h2 class="section-title">Who We Are</h2>
-            <div class="section-content">
-                <p>At IT Umbrella Company, we specialize in connecting ambitious organizations with high-caliber technology professionals. Our expertise spans permanent, contract, and fixed-term hiring, as well as scalable talent solutions designed to help you adapt and grow quickly.</p>
-                <p>From local projects to global expansion, our network covers the UK, Europe, and the Middle East—ensuring that no matter where your opportunities lie, we can deliver exceptional talent to power your success.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="background-image"></div>
+                <div class="overlay-gradient"></div>
             </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Global Reach</h3>
-                    <p>Extensive network across UK, Europe, and the Middle East, delivering exceptional talent worldwide.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="main-heading">
+                        <span class="heading-line">Connecting</span>
+                        <span class="heading-line highlight">Ambition with Excellence</span>
+                    </h1>
+                    <p class="hero-description">Specialized talent solutions for global technology organizations</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="primary-btn">
+                            Find Talent
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <a href="#services" class="secondary-btn">
+                            Explore Services
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Sector Specialists</h3>
-                    <p>Dedicated team of experts who understand your industry, culture, and specific needs.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>Innovative Solutions</h3>
-                    <p>Flexible hiring models from permanent to contract, tailored to your growth needs.</p>
-                </div>
+                
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services" class="services">
-        <div class="section-container">
-            <h2 class="section-title">Our Services</h2>
+        <section id="who-we-are" class="about futuristic">
+            <div class="about-container">
+                <div class="section-header">
+                    <h2>Who We Are</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="about-text-container">
+                    <div class="about-text-wrapper">
+                        <p class="about-text-animated">At IT Umbrella Company, we specialize in connecting ambitious organizations with high-caliber technology professionals. Our expertise spans permanent, contract, and fixed-term hiring, as well as scalable talent solutions designed to help you adapt and grow quickly.</p>
+                        <p class="about-text-animated highlight">From local projects to global expansion, our network covers the UK, Europe, and the Middle East—ensuring that no matter where your opportunities lie, we can deliver exceptional talent to power your success.</p>
+                    </div>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-card" data-feature="global">
+                        <div class="feature-icon">
+                            <div class="icon-circle">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="icon-rays"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Global Reach 🌍</h3>
+                            <p>Extensive network across the UK, Europe, and the Middle East, delivering exceptional talent worldwide.</p>
+                        </div>
+                        <div class="feature-bg"></div>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="specialists">
+                        <div class="feature-icon">
+                            <div class="icon-circle">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="icon-rays"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Sector Specialists 👥</h3>
+                            <p>Dedicated team of experts who understand your industry, culture, and specific needs.</p>
+                        </div>
+                        <div class="feature-bg"></div>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="solutions">
+                        <div class="feature-icon">
+                            <div class="icon-circle">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="icon-rays"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Innovative Solutions 💡</h3>
+                            <p>Flexible hiring models from permanent to contract, tailored to your growth needs.</p>
+                        </div>
+                        <div class="feature-bg"></div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="underline"></div>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>IT Support</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>🔧 IT Support</h3>
                     <p>24/7 technical support and maintenance</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Networks</h3>
-                    <p>Network design, security and optimization</p>
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>🌐 Networks</h3>
+                    <p>Network design, security, and optimization</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🖥️</div>
-                    <h3>System Administration</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>🖥️ System Administration</h3>
                     <p>Server management and monitoring</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>☁️ Cloud</h3>
                     <p>Cloud migration and management services</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>DevOps</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>⚙️ DevOps</h3>
                     <p>Continuous integration and deployment</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Management</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>📊 Management</h3>
                     <p>IT project and resource management</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Data</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>📈 Data</h3>
                     <p>Data analytics and management solutions</p>
+                    <div class="service-hover-effect"></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏗️</div>
-                    <h3>Infrastructure</h3>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>🏗️ Infrastructure</h3>
                     <p>Infrastructure planning and implementation</p>
+                    <div class="service-hover-effect"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="resources" class="resources">
-        <div class="section-container">
-            <h2 class="section-title">Resources</h2>
-            <div class="resources-content">
-                <p>We match organizations with ideal permanent hires and provide fast, scalable contract or fixed-term resources for dynamic, project-driven environments.</p>
+        <section id="resources" class="resources">
+            <div class="resources-container">
+                <div class="section-header">
+                    <h2>Resources</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="resources-intro">
+                    <p>We match organizations with ideal permanent hires and provide fast, scalable contract or fixed-term resources for dynamic, project-driven environments.</p>
+                </div>
+                
+                <div class="resources-types">
+                    <div class="resource-type">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Permanent</h3>
+                        <ul class="resource-features">
+                            <li>Full-time IT professionals</li>
+                            <li>Long-term partnerships</li>
+                            <li>Dedicated support teams</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-type">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Contract & Fixed-Term</h3>
+                        <ul class="resource-features">
+                            <li>Project-based engagements</li>
+                            <li>Flexible duration options</li>
+                            <li>Specialized expertise</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-type">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>Scaled Solutions</h3>
+                        <ul class="resource-features">
+                            <li>Customizable team size</li>
+                            <li>Scalable resources</li>
+                            <li>Flexible engagement models</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="clients">
+            <div class="section-header">
+                <h2>Our Clients</h2>
+                <div class="underline"></div>
             </div>
             
-            <div class="resources-tabs">
-                <div class="resource-tab">
-                    <h3>Permanent</h3>
-                    <ul class="resource-list">
-                        <li>Full-time IT professionals</li>
-                        <li>Long-term partnerships</li>
-                        <li>Dedicated support teams</li>
-                    </ul>
-                </div>
+            <div class="clients-carousel-container">
+                <button class="carousel-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 
-                <div class="resource-tab">
-                    <h3>Contract & Fixed-Term</h3>
-                    <ul class="resource-list">
-                        <li>Project-based engagements</li>
-                        <li>Flexible duration options</li>
-                        <li>Specialized expertise</li>
-                    </ul>
-                </div>
-                
-                <div class="resource-tab">
-                    <h3>Scaled Solutions</h3>
-                    <ul class="resource-list">
-                        <li>Customizable team size</li>
-                        <li>Scalable resources</li>
-                        <li>Flexible engagement models</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="clients" class="clients">
-        <div class="section-container">
-            <h2 class="section-title">Our Clients</h2>
-            <div class="carousel-container">
-                <button class="carousel-button prev">❮</button>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <!-- First set of images -->
-                        <div class="carousel-slide">
-                            <img src="img/clients/client1.png" alt="Client 1">
+                <div class="clients-carousel">
+                    <div class="clients-track">
+                        <div class="client-logo">
+                            <img src="img/1.png" alt="Client 1">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client2.png" alt="Client 2">
+                        <div class="client-logo">
+                            <img src="img/2.png" alt="Client 2">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client3.png" alt="Client 3">
+                        <div class="client-logo">
+                            <img src="img/3.png" alt="Client 3">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client4.png" alt="Client 4">
+                        <div class="client-logo">
+                            <img src="img/4.png" alt="Client 4">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client5.png" alt="Client 5">
+                        <div class="client-logo">
+                            <img src="img/5.png" alt="Client 5">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client6.png" alt="Client 6">
+                        <div class="client-logo">
+                            <img src="img/6.png" alt="Client 6">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client7.png" alt="Client 7">
+                        <div class="client-logo">
+                            <img src="img/7.png" alt="Client 7">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client8.png" alt="Client 8">
+                        <div class="client-logo">
+                            <img src="img/8.png" alt="Client 8">
                         </div>
-                        <!-- Duplicate first 6 images for infinite scroll -->
-                        <div class="carousel-slide">
-                            <img src="img/clients/client1.png" alt="Client 1">
+                        <div class="client-logo">
+                            <img src="img/9.png" alt="Client 9">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client2.png" alt="Client 2">
+                        <div class="client-logo">
+                            <img src="img/10.png" alt="Client 10">
                         </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client3.png" alt="Client 3">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client4.png" alt="Client 4">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client5.png" alt="Client 5">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/clients/client6.png" alt="Client 6">
+                        <div class="client-logo">
+                            <img src="img/11.png" alt="Client 11">
                         </div>
                     </div>
                 </div>
-                <button class="carousel-button next">❯</button>
+                
+                <button class="carousel-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-        </div>
-    </section>
+            
+            <div class="europe-map-container">
+                
+                <div class="europe-map" id="europeMap">
+                    <div class="map-overlay">
+                        <div class="map-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot coverage"></span>
+                                <span>Coverage Area</span>
+                            </div>
+                        </div>
+                    </div>
+                    <canvas id="globeCanvas"></canvas>
+                </div>
+            </div>
+        </section>
 
-    <footer id="contact" class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p><i class="phone-icon">📞</i> +34 643 126 315</p>
-                <p><i class="email-icon">✉️</i> info@itumbrellacompany.com</p>
-                <p><i class="location-icon">📍</i> G9P5+95 Alcobendas, Madrid - Spain</p>
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2>Contact Us</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <p>Ready to transform your technology team? Reach out to discuss how we can support your talent needs.</p>
+                    
+                    <div class="contact-details-card">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="https://api.whatsapp.com/send?phone=34643126315" target="_blank"> +34 643 126 315</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:info@itumbrellacompany.com"> info@itumbrellacompany.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p> G9P5+95 Alcobendas, Madrid - Spain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/it-umbrella-co/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12136.11524524121!2d-3.6418!3d40.5418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422d1b6c3f9e9b%3A0x4df2cc81d90114a9!2sAlcobendas%2C%20Madrid!5e0!3m2!1sen!2ses!4v1625764422944!5m2!1sen!2ses" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="contact-visual-overlay">
+                        <div class="pulse-dot"></div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="footer-section">
-                <h3>Business Hours</h3>
-                <p>24/7 Service Available</p>
-                <p>Always here to support you</p>
-            </div>
-            
-            <div class="footer-section company-info">
-                <h3>IT Umbrella Company</h3>
-                <p>Your trusted partner in enterprise IT solutions. Delivering excellence in technology services since 2010.</p>
-            </div>
-        </div>
+        </section>
+    </main>
+
+    <footer>
         
         <div class="footer-bottom">
-            <p>© 2025 IT Umbrella Company. All rights reserved | <a href="privacy.html" class="footer-link">Privacy Policy</a></p>
+            <p>&copy; 2023 IT Umbrella Company. All rights reserved.</p>
+            <div class="footer-locations">
+                <span>London</span>
+                <span>Madrid</span>
+                <span>Berlin</span>
+                <span>Amsterdam</span>
+                <span>Dubai</span>
+                
+            </div>
         </div>
     </footer>
+
+    <div class="cookie-banner" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your browsing experience. By continuing, you consent to our use of cookies.</p>
+            <div class="cookie-actions">
+                <button class="cookie-btn primary" id="cookieAccept">Accept</button>
+                <button class="cookie-close" id="cookieClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
